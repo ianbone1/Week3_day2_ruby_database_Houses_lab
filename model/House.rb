@@ -13,7 +13,7 @@ class House
     @buy_let = options['buy_let']
     @square_footage = options['square_footage'].to_i
     @build_type = options['build_type']
-    @id = options['id'] if options['id']
+    @id = options['id'].to_i if options['id']
   end
 
   def House.delete_all()
